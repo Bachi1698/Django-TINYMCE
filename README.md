@@ -19,7 +19,7 @@ INSTALLED_APPS = (
     'tinymce',
     'filebrowser',
 )
-
+```
 ## Config 1
 ```
 DEFAULT = {

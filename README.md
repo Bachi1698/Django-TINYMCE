@@ -21,7 +21,7 @@ INSTALLED_APPS = (
 )
 
 ## Config 1
-
+```
 DEFAULT = {
     'selector': 'textarea',
     'theme': 'modern',
@@ -35,10 +35,10 @@ DEFAULT = {
     'width': 'auto',
     'height': 360,
 }
-
+```
 
 ## Config 2
-
+```
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,
     'width': 900,
@@ -69,7 +69,7 @@ TINYMCE_DEFAULT_CONFIG = {
 }
 
 FILEBROWSER_MAX_UPLOAD_SIZE=10485760 *100
-
+```
 ### urls.py
 
 from filebrowser.sites import site
@@ -81,7 +81,7 @@ urlpatterns = [
 ]
 
 
-
+```
 ### models.py
 
 from tinymce import HTMLField
@@ -90,8 +90,9 @@ class MyModel(models.Model):
     ...
     content = HTMLField('Content')
     
-    
+```    
     
 ## lancer les static
 
 python manage.py collectstatic
+```
